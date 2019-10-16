@@ -382,62 +382,6 @@ LinkedList.prototype.reverse =  function(){
 }
 
 
-
-//reverses the linkedlist between the specified index range
-//m indicates starting index
-//n indicates ending index
-LinkedList.prototype.reverseBetween = function(m, n){
-
-  if(this.head === null){
-    return head
-  }
-
-  var total = 1
-  var currentNode = head
-
-  while(currentNode.next !== null){
-    total++
-    currentNode = currentNode.next
-  }
-
-
-  if(m > total || m < 1 || n > total || n < 1){
-    return null
-  }
-
-  else if((m > n) || (m === n)){
-    return null
-  }
-
-  else{
-    var count = 1
-    currentNode = this.head
-    var startNode = endNode = null
-    
-    while(currentNode !== null){
-      if(count === m){
-      startNode = currentNode
-      } 
-     
-     if(count === n){
-      endNode = currentNode
-      }
-
-    count++
-    currentNode = currentNode.next
-  }
-
-  var tempNode = startNode.data
-  startNode.data = endNode.data 
-  endNode.data = tempNode
-
-  
-  return reverseBetween(m+1, n-1)
-}
-
-}
-
-
 //swaps the linkedlist in pairs
 LinkedList.prototype.swapPairs = function(){
 
