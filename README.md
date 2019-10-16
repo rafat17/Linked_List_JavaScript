@@ -2,7 +2,7 @@
 All the basic to intermediate advanced linked list concepts implemented in JS
 
 
-**METHODS 
+<-----**METHODS**----->
 
 - **count()**                     ---> counts the number of nodes on the list
 - **append(data)**                ---> adds a new node to the end of the list
