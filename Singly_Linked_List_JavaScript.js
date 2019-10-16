@@ -35,7 +35,6 @@ LinkedList.prototype.count = function(){
 
 /******** ALL INSERTION OPERATIONS ********/
 
-
 //adds the node to the last position of the list
 LinkedList.prototype.append = function(data){
   
@@ -49,7 +48,6 @@ LinkedList.prototype.append = function(data){
     oldTail.next = this.tail
   }
 }
-
 
 
 //adds the node to the beginning of the list
@@ -96,14 +94,11 @@ LinkedList.prototype.insertAtIndex = function(data, index){
       break  
     }
   }
-
-
 }
 
 
 
 /**********ALL DELETION OPERATIONS **********/
-
 
 //Removes the head 
 LinkedList.prototype.deleteHead = function(){
@@ -140,7 +135,6 @@ LinkedList.prototype.deleteTail = function(){
     return oldTail
   }
 }
-
 
 
 //Removes the node at a given value
@@ -189,7 +183,6 @@ LinkedList.prototype.deleteAtValue = function(data){
   }
 
 }
-
 
 
 //removes the node at a given index position
@@ -277,7 +270,6 @@ LinkedList.prototype.searchAtValue = function(data){
 }
 
 
-
 //searches for the element at the given index
 LinkedList.prototype.searchAtIndex = function(index){
 
@@ -317,7 +309,6 @@ LinkedList.prototype.searchAtIndex = function(index){
   return currentNode
 
 }
-
 
 
 //deletes the head
@@ -497,8 +488,7 @@ LinkedList.prototype.shiftTailtoHeadPosition = function(){
 
 }
 
-
-
+//Calling and testing the methods created in the linked list class
 
 l1 = new LinkedList()
 l1.append(10)
